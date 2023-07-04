@@ -1,9 +1,10 @@
 import React from 'react';
-import footerimg from '../../../assets/images/footer.png'
+import footer from '../../../assets/images/footer.png'
 
 const Footer = () => {
     return (
-        <div style={{ background: `url(${footerimg})` }}>
+        <div style={{ background: `url(${footer})`,
+        backgroundSize: 'cover' }}>
             <footer className="footer p-10" >
                 <div>
                     <span className="footer-title">Services</span>
@@ -26,6 +27,9 @@ const Footer = () => {
                     <a className="link link-hover">Cookie policy</a>
                 </div>
             </footer>
+            <div className='mt-6 text-center'>
+                <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+            </div>
         </div>
     );
 };
