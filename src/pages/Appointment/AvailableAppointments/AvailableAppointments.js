@@ -1,6 +1,7 @@
 import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
 import AppointmentOption from './AppointmentOption';
+import BookingModal from '../BookingModal/BookingModal';
 
 const AvailableAppointments = ({ selectedDate }) => {
     const [availableAppointment, setAvailableAppointment] = useState([]);
@@ -20,6 +21,7 @@ const AvailableAppointments = ({ selectedDate }) => {
                     AppointmentOption={option} />)
                 }
             </div>
+            <BookingModal></BookingModal>
         </div>
     );
 };
